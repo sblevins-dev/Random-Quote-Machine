@@ -94,6 +94,7 @@
   #quote-text {
     font-size: 3vw;
     padding-top: 150px;
+    position: absolute;
   }
   #author {
     top: 0;
