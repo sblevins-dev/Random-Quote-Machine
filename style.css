@@ -15,7 +15,7 @@
   background-position: center;
 }
 
-#quote-wrapper {
+#quote-box {
   margin: 0;
   height: 100%;
   width: 100%;
@@ -26,7 +26,7 @@
   position: relative;
 }
 
-#quote-text {
+#text {
   color: rgb(250, 216, 121);
   padding: 120px 20px 20px;
   font-size: 5vw;
@@ -52,7 +52,7 @@
   padding-right: 20px;
 }
 
-#next {
+#new-quote {
   background: transparent;
   border: 1px solid white;
   border-radius: 5%;
@@ -62,20 +62,38 @@
   font-size: 18px;
 }
 
-#next:active {
+#new-quote:active {
   color: white;
   border: 1px solid white;
 }
 
-#next:hover {
-  border: 5px solid white;
-  color: rgb(252, 225, 106);
+#new-quote:hover {
+  border: 5px solid #55acee;
+  background-color: #55acee;
+  font-size: 20px;
+  font-weight: 700;
+  transition: ease-in-out 150ms;
+  color: white;
+}
+
+.fab {
+  width: 50px;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  border: 1px solid white;
+  border-radius: 5%;
+}
+
+.fab:hover {
+  background: #55acee;
+  border: 1px solid #55acee;
   font-size: 20px;
   transition: ease-in-out 150ms;
 }
 
 @media (min-width: 700px) {
-  #quote-text {
+  #text {
     font-size: 10vw;
     text-align: center;
     padding-top: 120px auto;
@@ -91,7 +109,7 @@
 }
 
 @media (orientation: landscape) {
-  #quote-text {
+  #text {
     font-size: 3vw;
     padding-top: 150px;
     position: absolute;
